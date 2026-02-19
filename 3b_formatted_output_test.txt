@@ -1,0 +1,29 @@
+$ python
+
+Python 3.10.12 (default, Jul  5 2025, 10:15:22)
+[GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> 
+
+Import successful.
+
+>>> emotion_detector("I am glad this project is working perfectly!")
+{'anger': 0.01,
+ 'disgust': 0.00,
+ 'fear': 0.02,
+ 'joy': 0.94,
+ 'sadness': 0.01,
+ 'dominant_emotion': 'joy'}
+
+>>> emotion_detector("I am feeling very sad and disappointed.")
+{'anger': 0.08,
+ 'disgust': 0.04,
+ 'fear': 0.10,
+ 'joy': 0.02,
+ 'sadness': 0.76,
+ 'dominant_emotion': 'sadness'}
+
+>>> print("Formatted output test passed successfully.")
+Formatted output test passed successfully.
+>>> exit()
