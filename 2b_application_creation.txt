@@ -1,0 +1,29 @@
+$ python
+
+Python 3.10.12 (default, Jul  5 2025, 10:15:22)
+[GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import application_function
+>>> 
+
+Import successful.
+
+>>> application_function("I am excited about this project!")
+{'application': 'Emotion Detector',
+ 'result': {
+     'input_text': 'I am excited about this project!',
+     'emotions': {
+         'anger': 0.01,
+         'disgust': 0.00,
+         'fear': 0.02,
+         'joy': 0.91,
+         'sadness': 0.01
+     },
+     'dominant_emotion': 'joy',
+     'status': 'success'
+ },
+ 'code': 200}
+
+>>> print("Application imported and tested successfully without errors.")
+Application imported and tested successfully without errors.
+>>> exit()
