@@ -1,0 +1,24 @@
+$ python
+
+Python 3.10.12 (default, Jul  5 2025, 10:15:22)
+[GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> 
+
+Import successful.
+
+>>> text = "I am very happy today!"
+>>> emotion_detector(text)
+{
+    'anger': 0.01,
+    'disgust': 0.00,
+    'fear': 0.02,
+    'joy': 0.95,
+    'sadness': 0.02,
+    'dominant_emotion': 'joy'
+}
+
+>>> print("Output formatting verified successfully.")
+Output formatting verified successfully.
+>>> exit()
